@@ -31,5 +31,6 @@
   { "id": "odyssey-limoni", "nombre": "Odyssey Limoni", "marca": "Armaf", "uso": "día", "genero": "hombre", "categoria": "árabe", "precio5ml": 70, "precio10ml": 100 },
   { "id": "valentino-donna", "nombre": "Valentino Donna", "marca": "Valentino", "uso": "día/noche", "genero": "mujer", "categoria": "diseñador", "precio5ml": 220, "precio10ml": 400 },
   { "id": "stronger-with-you", "nombre": "Stronger With You Intensely", "marca": "Emporio Armani", "uso": "noche", "genero": "hombre", "categoria": "diseñador", "precio5ml": 150, "precio10ml": 260 },
-  { "id": "valentino-born-in-roma", "nombre": "Valentino Born In Roma", "marca": "Valentino", "uso": "noche", "genero": "hombre", "categoria": "diseñador", "precio5ml": 205, "precio10ml": 370 }
+  { "id": "valentino-born-in-roma", "nombre": "Valentino Born In Roma", "marca": "Valentino", "uso": "noche", "genero": "hombre", "categoria": "diseñador", "precio5ml": 205, "precio10ml": 370 },
+  { "id": "dior-homme-intense", "nombre": "Dior Homme Intense", "marca": "Dior", "uso": "noche", "genero": "hombre", "categoria": "diseñador", "precio5ml": 170, "precio10ml": 300 }
 ]

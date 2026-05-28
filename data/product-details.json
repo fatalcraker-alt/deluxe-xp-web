@@ -262,5 +262,13 @@
     "notasFondo": ["Patchouli", "Vainilla"],
     "temporada": ["Todo el año"],
     "intensidad": "Alta"
+  },
+  "dior-homme-intense": {
+    "descripcion": "El elegante por excelencia. Iris puro, sofisticación absoluta — para quien sabe exactamente quién es.",
+    "notasTop": ["Lavanda", "Bergamota"],
+    "notasCorazon": ["Iris", "Pétalos de lirio"],
+    "notasFondo": ["Vetiver", "Cedro", "Ámbar gris"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Muy alta"
   }
 }
