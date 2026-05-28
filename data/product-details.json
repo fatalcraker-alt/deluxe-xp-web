@@ -1,0 +1,266 @@
+{
+  "212-vip": {
+    "descripcion": "Audaz y sensual, pensado para quienes no pasan desapercibidos. Un clásico de noche.",
+    "notasTop": ["Mandarina", "Notas cristalinas"],
+    "notasCorazon": ["Violeta", "Flor de la pasión"],
+    "notasFondo": ["Musgo blanco", "Sándalo"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Alta"
+  },
+  "212-men": {
+    "descripcion": "Fresco y urbano. El aliado perfecto para el día a día con carácter.",
+    "notasTop": ["Bergamota", "Pomelo"],
+    "notasCorazon": ["Salvia"],
+    "notasFondo": ["Madera de guayacol"],
+    "temporada": ["Primavera", "Verano"],
+    "intensidad": "Moderada"
+  },
+  "adg-profond": {
+    "descripcion": "La profundidad del mar en un frasco. Acuático, moderno y absolutamente masculino.",
+    "notasTop": ["Bergamota", "Mandarina"],
+    "notasCorazon": ["Lavandina", "Salvia"],
+    "notasFondo": ["Patchouli", "Sándalo"],
+    "temporada": ["Todo el año"],
+    "intensidad": "Alta"
+  },
+  "dior-sauvage": {
+    "descripcion": "El perfume más icónico del mundo. Magnético, salvaje y sin igual.",
+    "notasTop": ["Bergamota de Calabria"],
+    "notasCorazon": ["Lavanda", "Pimienta rosa"],
+    "notasFondo": ["Ambroxan", "Vetiver"],
+    "temporada": ["Todo el año"],
+    "intensidad": "Alta"
+  },
+  "inv-parfum": {
+    "descripcion": "Invictus en su versión más oscura y seductora. Para quien quiere dominar la noche.",
+    "notasTop": ["Avellana", "Cardamomo"],
+    "notasCorazon": ["Iris"],
+    "notasFondo": ["Benzil benzoato", "Madera"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Muy alta"
+  },
+  "inv-elixir": {
+    "descripcion": "El lado más oscuro de Invictus. Intenso, profundo, difícil de olvidar.",
+    "notasTop": ["Avellana", "Cardamomo"],
+    "notasCorazon": ["Patchouli", "Iris"],
+    "notasFondo": ["Incienso", "Ámbar"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Muy alta"
+  },
+  "dylan-blue": {
+    "descripcion": "Mediterráneo y sofisticado. Fresco como el mar, elegante como Versace.",
+    "notasTop": ["Hoja de higo", "Bergamota"],
+    "notasCorazon": ["Papiro", "Hoja de violeta"],
+    "notasFondo": ["Almizcle", "Patchouli"],
+    "temporada": ["Primavera", "Verano"],
+    "intensidad": "Moderada"
+  },
+  "versace-eros": {
+    "descripcion": "Pasional y mítico. Inspirado en el dios del amor, tan intenso como su nombre.",
+    "notasTop": ["Menta", "Manzana", "Limón"],
+    "notasCorazon": ["Ambroxan", "Geranio"],
+    "notasFondo": ["Vetiver", "Musgo de roble", "Cedro"],
+    "temporada": ["Todo el año"],
+    "intensidad": "Alta"
+  },
+  "explorer": {
+    "descripcion": "Para el explorador moderno. Natural, aventurero y versátil.",
+    "notasTop": ["Bergamota", "Vetiver"],
+    "notasCorazon": ["Semilla de ambrette"],
+    "notasFondo": ["Vetiver haitiano", "Madera"],
+    "temporada": ["Todo el año"],
+    "intensidad": "Moderada"
+  },
+  "le-beau": {
+    "descripcion": "Tropical y magnético. El coco y la bergamota se fusionan en algo único.",
+    "notasTop": ["Bergamota", "Coco"],
+    "notasCorazon": ["Cardamomo"],
+    "notasFondo": ["Sándalo", "Almizcle"],
+    "temporada": ["Primavera", "Verano"],
+    "intensidad": "Moderada"
+  },
+  "le-beau-parfu": {
+    "descripcion": "La versión más intensa de Le Beau. Oscuro, tropical y absolutamente adictivo.",
+    "notasTop": ["Bergamota", "Pimienta negra"],
+    "notasCorazon": ["Coco"],
+    "notasFondo": ["Ámbar", "Sándalo"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Alta"
+  },
+  "scandal": {
+    "descripcion": "Cítrico y provocador. Jean Paul Gaultier en estado puro.",
+    "notasTop": ["Naranja roja", "Limón"],
+    "notasCorazon": ["Olíbano"],
+    "notasFondo": ["Ámbar", "Cuero"],
+    "temporada": ["Todo el año"],
+    "intensidad": "Alta"
+  },
+  "light-blue": {
+    "descripcion": "La brisa del Mediterráneo. Fresco, limpio y eternamente elegante.",
+    "notasTop": ["Limón siciliano", "Campanilla azul"],
+    "notasCorazon": ["Bambú"],
+    "notasFondo": ["Musgo blanco"],
+    "temporada": ["Primavera", "Verano"],
+    "intensidad": "Ligera"
+  },
+  "ck-one": {
+    "descripcion": "El ícono unisex por excelencia. Fresco, limpio y para todos.",
+    "notasTop": ["Piña", "Papaya"],
+    "notasCorazon": ["Rosa", "Jazmín"],
+    "notasFondo": ["Almizcle", "Sándalo"],
+    "temporada": ["Primavera", "Verano"],
+    "intensidad": "Ligera"
+  },
+  "stalion-53": {
+    "descripcion": "Oriental y con personalidad. Inspirado en la riqueza de la perfumería árabe.",
+    "notasTop": ["Bergamota", "Especias"],
+    "notasCorazon": ["Oud", "Rosa"],
+    "notasFondo": ["Almizcle", "Ámbar"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Alta"
+  },
+  "9am-dive": {
+    "descripcion": "Energía matutina. Fresco, dinámico, listo para el día.",
+    "notasTop": ["Bergamota", "Pomelo"],
+    "notasCorazon": ["Vetiver"],
+    "notasFondo": ["Almizcle", "Madera limpia"],
+    "temporada": ["Primavera", "Verano"],
+    "intensidad": "Ligera"
+  },
+  "9pm": {
+    "descripcion": "Cuando cae la noche. Profundo, sensual, para las horas más interesantes.",
+    "notasTop": ["Manzana", "Pera"],
+    "notasCorazon": ["Rosa"],
+    "notasFondo": ["Almizcle", "Ámbar"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Moderada"
+  },
+  "9pm-night-out": {
+    "descripcion": "Para salir y no pasar desapercibido. La versión más intensa del 9PM.",
+    "notasTop": ["Manzana", "Especias"],
+    "notasCorazon": ["Rosa", "Jazmín"],
+    "notasFondo": ["Almizcle oscuro", "Ámbar"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Alta"
+  },
+  "9pm-rebel": {
+    "descripcion": "Audaz, nocturno, sin reglas. Para quien marca su propio camino.",
+    "notasTop": ["Manzana", "Limón"],
+    "notasCorazon": ["Lavanda"],
+    "notasFondo": ["Almizcle", "Ámbar"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Alta"
+  },
+  "cdn-iconic": {
+    "descripcion": "La alternativa premium a Creed Aventus. Complejo, sofisticado, icónico.",
+    "notasTop": ["Manzana", "Piña", "Abedul"],
+    "notasCorazon": ["Rosa", "Jazmín"],
+    "notasFondo": ["Ambergris", "Almizcle", "Sándalo"],
+    "temporada": ["Todo el año"],
+    "intensidad": "Alta"
+  },
+  "cdn-intense": {
+    "descripcion": "Aventus en versión oscura. Más leñoso, más profundo, más imponente.",
+    "notasTop": ["Piña", "Abedul"],
+    "notasCorazon": ["Jazmín", "Rosa"],
+    "notasFondo": ["Almizcle oscuro", "Patchouli"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Muy alta"
+  },
+  "hawas-fire": {
+    "descripcion": "El fuego del desierto. Especiado, ardiente y magnético.",
+    "notasTop": ["Bergamota", "Pimienta"],
+    "notasCorazon": ["Lavanda", "Oud"],
+    "notasFondo": ["Ámbar", "Madera"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Alta"
+  },
+  "hawas-for-him": {
+    "descripcion": "Acuático y masculino con corazón floral. Fresco y a la vez sofisticado.",
+    "notasTop": ["Bergamota", "Mandarina"],
+    "notasCorazon": ["Jazmín", "Vetiver"],
+    "notasFondo": ["Sándalo", "Almizcle"],
+    "temporada": ["Primavera", "Verano"],
+    "intensidad": "Moderada"
+  },
+  "hawas-tropic": {
+    "descripcion": "Una escapada tropical. Coco, cítricos y flores bajo el sol.",
+    "notasTop": ["Cítricos", "Coco"],
+    "notasCorazon": ["Flores tropicales"],
+    "notasFondo": ["Almizcle", "Madera suave"],
+    "temporada": ["Primavera", "Verano"],
+    "intensidad": "Moderada"
+  },
+  "hawas-malibu": {
+    "descripcion": "Aire del Pacífico. Fresco, salino y con un fondo cálido irresistible.",
+    "notasTop": ["Bergamota", "Notas marinas"],
+    "notasCorazon": ["Jazmín", "Flor acuática"],
+    "notasFondo": ["Sándalo", "Almizcle"],
+    "temporada": ["Primavera", "Verano"],
+    "intensidad": "Moderada"
+  },
+  "odyssey-home": {
+    "descripcion": "Oriental clásico con un toque de cuero. Elegante y con mucha proyección.",
+    "notasTop": ["Bergamota"],
+    "notasCorazon": ["Cuero", "Jazmín"],
+    "notasFondo": ["Almizcle", "Ámbar"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Alta"
+  },
+  "odyssey-home-white": {
+    "descripcion": "La versión más limpia del Odyssey. Fresco, suave y versátil.",
+    "notasTop": ["Bergamota", "Cítricos"],
+    "notasCorazon": ["Jazmín", "Lavanda"],
+    "notasFondo": ["Almizcle blanco", "Cedro"],
+    "temporada": ["Primavera", "Verano"],
+    "intensidad": "Moderada"
+  },
+  "odyssey-mega": {
+    "descripcion": "Grande en todo sentido. Proyección impresionante, estela larga, presencia total.",
+    "notasTop": ["Bergamota"],
+    "notasCorazon": ["Jazmín", "Rosa"],
+    "notasFondo": ["Almizcle", "Oud", "Ámbar"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Muy alta"
+  },
+  "odyssey-mandarin": {
+    "descripcion": "Cítrico y especiado a la vez. Ideal para todo el año con un giro oriental.",
+    "notasTop": ["Mandarina", "Bergamota"],
+    "notasCorazon": ["Jazmín", "Especias"],
+    "notasFondo": ["Almizcle", "Madera"],
+    "temporada": ["Todo el año"],
+    "intensidad": "Moderada"
+  },
+  "odyssey-limoni": {
+    "descripcion": "Puro cítrico refrescante. El más ligero de la línea Odyssey.",
+    "notasTop": ["Limón", "Lima"],
+    "notasCorazon": ["Jazmín", "Flores blancas"],
+    "notasFondo": ["Almizcle limpio"],
+    "temporada": ["Primavera", "Verano"],
+    "intensidad": "Ligera"
+  },
+  "valentino-donna": {
+    "descripcion": "Floral, poderoso y femenino. Rosa y patchouli en perfecta armonía.",
+    "notasTop": ["Rosa", "Bergamota"],
+    "notasCorazon": ["Patchouli", "Iris"],
+    "notasFondo": ["Almizcle", "Vainilla"],
+    "temporada": ["Todo el año"],
+    "intensidad": "Alta"
+  },
+  "stronger-with-you": {
+    "descripcion": "Cálido, especiado y romántico. Un abrazo en forma de perfume.",
+    "notasTop": ["Pimienta rosa", "Manzana"],
+    "notasCorazon": ["Canela"],
+    "notasFondo": ["Ámbar", "Patchouli", "Vainilla"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Alta"
+  },
+  "valentino-born-in-roma": {
+    "descripcion": "Moderno, audaz, romano. Floral oscuro con un fondo irresistible.",
+    "notasTop": ["Lavanda", "Bergamota"],
+    "notasCorazon": ["Jazmín", "Rosa"],
+    "notasFondo": ["Patchouli", "Vainilla"],
+    "temporada": ["Todo el año"],
+    "intensidad": "Alta"
+  }
+}
