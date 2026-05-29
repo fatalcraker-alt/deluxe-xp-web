@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <OffersSection />
       <CatalogSection
         id="decants"
         title="Decants"
@@ -25,7 +26,6 @@ export default function Home() {
         products={completos as Completo[]}
         dark={false}
       />
-      <OffersSection />
       <MysteryBoxSection />
       <Footer />
       <WhatsAppButton />
