@@ -28,11 +28,11 @@ function buildWhatsAppUrl(
 export default function CartDrawer() {
   const {
     items, removeItem, updateCantidad, clearCart,
-    itemCount, subtotal, porcentajeDescuento, montoDescuento, total,
+    itemCount, subtotal, subtotalDecants, porcentajeDescuento, montoDescuento, total,
     isOpen, closeCart,
   } = useCart();
 
-  const nextTier = subtotal < 500 ? 500 : subtotal < 700 ? 700 : null;
+  const nextTier = subtotalDecants < 500 ? 500 : subtotalDecants < 700 ? 700 : null;
 
   return (
     <AnimatePresence>
@@ -127,9 +127,9 @@ export default function CartDrawer() {
                 {nextTier && (
                   <div className="bg-brand-gray/10 px-4 py-3 text-center">
                     <p className="font-sans text-xs text-brand-gray">
-                      {subtotal < 500
-                        ? `Agrega $${(500 - subtotal).toFixed(0)} más y obtén 5% de descuento`
-                        : `Agrega $${(700 - subtotal).toFixed(0)} más y obtén 10% de descuento`
+                      {subtotalDecants < 500
+                        ? `Agrega $${(500 - subtotalDecants).toFixed(0)} más en decants y obtén 5% de descuento`
+                        : `Agrega $${(700 - subtotalDecants).toFixed(0)} más en decants y obtén 10% de descuento`
                       }
                     </p>
                   </div>
@@ -155,7 +155,7 @@ export default function CartDrawer() {
 
                 {/* Discount rules */}
                 <p className="font-sans text-[10px] text-brand-gray/50 text-center leading-relaxed">
-                  Compras +$500 → 5% desc · Compras +$700 → 10% desc
+                  Descuento aplica solo en decants · +$500 → 5% · +$700 → 10%
                 </p>
 
                 {/* CTA */}

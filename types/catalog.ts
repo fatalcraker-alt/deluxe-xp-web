@@ -11,6 +11,7 @@ export interface Decant {
   categoria: Categoria;
   precio5ml: number;
   precio10ml: number;
+  imagen?: string;
 }
 
 export interface Completo {
@@ -22,6 +23,7 @@ export interface Completo {
   categoria: Categoria;
   ml: number;
   precio: number;
+  imagen?: string;
 }
 
 export interface ProductDetail {

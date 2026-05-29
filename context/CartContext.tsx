@@ -22,6 +22,7 @@ interface CartContextType {
   clearCart: () => void;
   itemCount: number;
   subtotal: number;
+  subtotalDecants: number;
   porcentajeDescuento: number;
   montoDescuento: number;
   total: number;
@@ -73,14 +74,17 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const itemCount = items.reduce((sum, i) => sum + i.cantidad, 0);
   const subtotal = items.reduce((sum, i) => sum + i.precioUnitario * i.cantidad, 0);
-  const porcentajeDescuento = calcPorcentaje(subtotal);
-  const montoDescuento = subtotal * porcentajeDescuento;
+  const subtotalDecants = items
+    .filter(i => i.type === "decant")
+    .reduce((sum, i) => sum + i.precioUnitario * i.cantidad, 0);
+  const porcentajeDescuento = calcPorcentaje(subtotalDecants);
+  const montoDescuento = subtotalDecants * porcentajeDescuento;
   const total = subtotal - montoDescuento;
 
   return (
     <CartContext.Provider value={{
       items, addItem, removeItem, updateCantidad, clearCart,
-      itemCount, subtotal, porcentajeDescuento, montoDescuento, total,
+      itemCount, subtotal, subtotalDecants, porcentajeDescuento, montoDescuento, total,
       isOpen, openCart, closeCart,
     }}>
       {children}

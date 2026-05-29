@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useCart } from "@/context/CartContext";
 
@@ -8,6 +10,7 @@ const WHATSAPP = "523313198549";
 
 export default function OffersSection() {
   const { addItem } = useCart();
+  const [imgError, setImgError] = useState(false);
 
   const addPromo = () => {
     addItem({
@@ -48,6 +51,28 @@ export default function OffersSection() {
             <div className="space-y-1">
               <span className="font-sans text-[10px] tracking-widest uppercase text-brand-gray border border-brand-gray/30 px-2 py-0.5">Activa</span>
             </div>
+
+            {/* Imagen del producto */}
+            {!imgError ? (
+              <div className="relative w-full aspect-[4/3] overflow-hidden">
+                <Image
+                  src="/images/ofertas/sky-mandarin-mega.jpg"
+                  alt="Sky Mandarin + Odyssey Mega"
+                  fill
+                  className="object-cover"
+                  onError={() => setImgError(true)}
+                />
+              </div>
+            ) : (
+              <div className="w-full aspect-[4/3] bg-gradient-to-br from-brand-gray/15 to-transparent border border-brand-gray/10 flex items-center justify-center">
+                <div className="text-center space-y-2 px-4">
+                  <p className="font-serif text-brand-gray/60 text-sm">Sky Mandarin</p>
+                  <p className="font-sans text-brand-gray/30 text-xs">+</p>
+                  <p className="font-serif text-brand-gray/60 text-sm">Odyssey Mega</p>
+                </div>
+              </div>
+            )}
+
             <h3 className="font-serif text-2xl text-brand-white leading-tight">
               Sky Mandarin<br />
               <span className="text-brand-gray text-lg">+</span><br />

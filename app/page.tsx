@@ -25,8 +25,8 @@ export default function Home() {
         products={completos as Completo[]}
         dark={false}
       />
-      <MysteryBoxSection />
       <OffersSection />
+      <MysteryBoxSection />
       <Footer />
       <WhatsAppButton />
     </main>

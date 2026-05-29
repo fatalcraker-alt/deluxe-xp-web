@@ -72,7 +72,7 @@ export default function CatalogSection({ id, title, subtitle, products, dark = t
 
           {/* Discount hint */}
           <p className={`font-sans text-[10px] ${sub} tracking-wider opacity-60`}>
-            +$500 → 5% desc · +$700 → 10% desc — se aplica en el carrito
+            Decants: +$500 → 5% desc · +$700 → 10% desc
           </p>
         </motion.div>
 

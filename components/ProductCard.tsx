@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useCart } from "@/context/CartContext";
 import { Decant, Completo } from "@/types/catalog";
@@ -44,6 +45,17 @@ export function DecantCard({ product, index, onOpenModal }: DecantCardProps) {
       onClick={() => onOpenModal(product)}
       className="group border border-brand-gray/20 bg-brand-black hover:border-brand-gray/50 transition-all duration-300 flex flex-col cursor-pointer"
     >
+      {product.imagen && (
+        <div className="relative w-full aspect-[3/4] bg-brand-black overflow-hidden">
+          <Image
+            src={product.imagen}
+            alt={product.nombre}
+            fill
+            className="object-contain p-3 group-hover:scale-105 transition-transform duration-500"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+          />
+        </div>
+      )}
       <div className="p-5 flex-1 space-y-3">
         <div className="flex items-start justify-between gap-2">
           <div>
@@ -117,6 +129,17 @@ export function CompletoCard({ product, index, onOpenModal }: CompletoCardProps)
       onClick={() => onOpenModal(product)}
       className="group border border-brand-black/15 bg-brand-offwhite hover:border-brand-black/40 transition-all duration-300 flex flex-col cursor-pointer"
     >
+      {product.imagen && (
+        <div className="relative w-full aspect-[3/4] bg-brand-offwhite overflow-hidden">
+          <Image
+            src={product.imagen}
+            alt={product.nombre}
+            fill
+            className="object-contain p-3 group-hover:scale-105 transition-transform duration-500"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+          />
+        </div>
+      )}
       <div className="p-5 flex-1 space-y-3">
         <div className="flex items-start justify-between gap-2">
           <div>
