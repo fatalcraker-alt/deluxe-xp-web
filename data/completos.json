@@ -32,5 +32,6 @@
   { "id": "valentino-donna", "nombre": "Valentino Donna", "marca": "Valentino", "uso": "día/noche", "genero": "mujer", "categoria": "diseñador", "ml": 100, "precio": 2990, "imagen": "/images/productos/valentino-donna.png" },
   { "id": "stronger-with-you", "nombre": "Stronger With You Intensely", "marca": "Emporio Armani", "uso": "noche", "genero": "hombre", "categoria": "diseñador", "ml": 100, "precio": 2290, "imagen": "/images/productos/stronger-with-you.png" },
   { "id": "valentino-born-in-roma", "nombre": "Valentino Born In Roma", "marca": "Valentino", "uso": "noche", "genero": "hombre", "categoria": "diseñador", "ml": 100, "precio": 2790, "imagen": "/images/productos/valentino-born-in-roma.png" },
-  { "id": "dior-homme-intense", "nombre": "Dior Homme Intense", "marca": "Dior", "uso": "noche", "genero": "hombre", "categoria": "diseñador", "ml": 100, "precio": 2490, "imagen": "/images/productos/dior-homme-intense.png" }
+  { "id": "dior-homme-intense", "nombre": "Dior Homme Intense", "marca": "Dior", "uso": "noche", "genero": "hombre", "categoria": "diseñador", "ml": 100, "precio": 2490, "imagen": "/images/productos/dior-homme-intense.png" },
+  { "id": "valentino-born-in-roma-intense", "nombre": "Valentino Born In Roma Intense", "marca": "Valentino", "uso": "noche", "genero": "hombre", "categoria": "diseñador", "ml": 100, "precio": 3340, "imagen": "/images/productos/valentino-born-in-roma-intense.png" }
 ]

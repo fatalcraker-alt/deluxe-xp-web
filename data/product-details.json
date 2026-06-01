@@ -270,5 +270,13 @@
     "notasFondo": ["Vetiver", "Cedro", "Ámbar gris"],
     "temporada": ["Otoño", "Invierno"],
     "intensidad": "Muy alta"
+  },
+  "valentino-born-in-roma-intense": {
+    "descripcion": "Born In Roma en su versión más oscura y adictiva. Cálido, profundo y con una estela que no se olvida.",
+    "notasTop": ["Bergamota", "Pera"],
+    "notasCorazon": ["Rosa negra", "Iris"],
+    "notasFondo": ["Vetiver", "Patchouli negro", "Ámbar"],
+    "temporada": ["Otoño", "Invierno"],
+    "intensidad": "Muy alta"
   }
 }
