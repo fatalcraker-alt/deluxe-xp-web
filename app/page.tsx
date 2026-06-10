@@ -15,14 +15,16 @@ export default function Home() {
       <OffersSection />
       <CatalogSection
         id="decants"
-        title="Decants"
-        subtitle="Prueba antes de comprometerte — 5ml y 10ml de tus favoritos."
+        number="02"
+        title="Los Decants"
+        subtitle="Prueba antes de comprometerte — 5ml y 10ml de tus favoritos, al precio justo."
         products={decants as Decant[]}
       />
       <CatalogSection
         id="completos"
-        title="Completos"
-        subtitle="La experiencia completa. Hazlo tuyo."
+        number="03"
+        title="Los Completos"
+        subtitle="La experiencia completa. El frasco en tu repisa."
         products={completos as Completo[]}
         dark={false}
       />

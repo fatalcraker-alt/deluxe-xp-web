@@ -3,13 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #0A0A0A;
-  --foreground: #FFFFFF;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
+  --background: #0a0a0a;
+  --foreground: #ffffff;
 }
 
 * {
@@ -22,13 +17,76 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  text-rendering: optimizeLegibility;
+}
+
+/* Grain — la textura sutil que separa "negro plano" de "atelier" */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
 ::selection {
-  background-color: #F7F3EE;
-  color: #0A0A0A;
+  background-color: #f7f3ee;
+  color: #0a0a0a;
+}
+
+/* Scrollbar acorde a la estética */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border: 2px solid #0a0a0a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* Foco visible — accesibilidad sin romper la estética */
+:focus-visible {
+  outline: 2px solid #e5e0da;
+  outline-offset: 3px;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  /* Texto fantasma de fondo (wordmark XP del hero) */
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(122, 122, 122, 0.28);
+    color: transparent;
+  }
+  .text-outline-light {
+    -webkit-text-stroke: 1px rgba(10, 10, 10, 0.14);
+    color: transparent;
+  }
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

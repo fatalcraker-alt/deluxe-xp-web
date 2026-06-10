@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useCart } from "@/context/CartContext";
+import SectionHeading from "@/components/SectionHeading";
 
 const PROMO_ID = "promo-sky-mandarin-mega";
 const WHATSAPP = "523313198549";
@@ -26,64 +27,78 @@ export default function OffersSection() {
   };
 
   return (
-    <section id="ofertas" className="bg-brand-black border-t border-brand-gray/10 py-24 px-6">
-      <div className="max-w-4xl mx-auto">
+    <section id="ofertas" className="relative bg-brand-black py-24 sm:py-32 px-5 sm:px-8 overflow-hidden scroll-mt-10">
+      <div className="max-w-7xl mx-auto">
+        <SectionHeading
+          number="01"
+          eyebrow="Por tiempo limitado"
+          title="La oferta"
+          subtitle="Las promociones rotan seguido — esta es la activa hoy."
+        />
+
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center space-y-10"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="grid md:grid-cols-2 gap-10 md:gap-16 items-center"
         >
-          <div className="space-y-3">
-            <p className="font-sans text-xs tracking-[0.4em] uppercase text-brand-gray">Promociones</p>
-            <h2 className="font-serif text-4xl md:text-5xl text-brand-white uppercase tracking-widest">Ofertas</h2>
-          </div>
-
-          {/* Promo activa */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.98 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="border border-brand-gray/25 p-8 space-y-5 max-w-md mx-auto"
-          >
-            <div className="space-y-1">
-              <span className="font-sans text-[10px] tracking-widest uppercase text-brand-gray border border-brand-gray/30 px-2 py-0.5">Activa</span>
-            </div>
-
-            {/* Imagen del producto */}
+          {/* Imagen con marco editorial desplazado */}
+          <div className="relative order-1 md:order-none">
+            <div className="absolute -top-3 -left-3 w-full h-full border border-brand-white/[0.12] pointer-events-none" />
             {!imgError ? (
-              <div className="relative w-full aspect-[4/3] overflow-hidden">
+              <div className="relative w-full aspect-[4/3] overflow-hidden bg-brand-coal">
                 <Image
                   src="/images/ofertas/sky-mandarin-mega.jpg"
-                  alt="Sky Mandarin + Odyssey Mega"
+                  alt="Promoción: Sky Mandarin + Odyssey Mega, decants de 10ml"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   onError={() => setImgError(true)}
                 />
               </div>
             ) : (
-              <div className="w-full aspect-[4/3] bg-gradient-to-br from-brand-gray/15 to-transparent border border-brand-gray/10 flex items-center justify-center">
+              <div className="relative w-full aspect-[4/3] bg-brand-coal flex items-center justify-center">
                 <div className="text-center space-y-2 px-4">
-                  <p className="font-serif text-brand-gray/60 text-sm">Sky Mandarin</p>
-                  <p className="font-sans text-brand-gray/30 text-xs">+</p>
-                  <p className="font-serif text-brand-gray/60 text-sm">Odyssey Mega</p>
+                  <p className="font-serif italic text-brand-chalk/70 text-lg">Sky Mandarin</p>
+                  <p className="font-sans text-brand-gray/40 text-xs">+</p>
+                  <p className="font-serif italic text-brand-chalk/70 text-lg">Odyssey Mega</p>
                 </div>
               </div>
             )}
+            <span className="absolute top-4 left-4 bg-brand-offwhite text-brand-black font-sans text-[9px] tracking-[0.3em] uppercase px-3 py-1.5">
+              Promo activa
+            </span>
+          </div>
 
-            <h3 className="font-serif text-2xl text-brand-white leading-tight">
-              Sky Mandarin<br />
-              <span className="text-brand-gray text-lg">+</span><br />
-              Odyssey Mega
-            </h3>
-            <p className="font-sans text-xs text-brand-gray tracking-wider">10ml + 10ml — Decants</p>
-            <div className="border-t border-brand-gray/15 pt-5 space-y-4">
-              <p className="font-serif text-4xl text-brand-white">$220</p>
+          {/* Contenido */}
+          <div className="space-y-7">
+            <div>
+              <p className="font-sans text-[10px] tracking-[0.4em] uppercase text-brand-gray">
+                Afnan · Armaf
+              </p>
+              <h3 className="font-serif text-4xl sm:text-5xl text-brand-white leading-[1.05] mt-3">
+                Sky Mandarin{" "}
+                <span className="font-light italic text-brand-chalk">&</span>{" "}
+                Odyssey Mega
+              </h3>
+              <p className="font-sans text-sm text-brand-gray mt-4 leading-relaxed max-w-md">
+                Dúo de decants de 10ml — cítrico fresco para el día, dulce
+                ambarado para la noche. Los dos lados de la moneda.
+              </p>
+            </div>
+
+            <div className="flex items-baseline gap-4">
+              <p className="font-serif text-5xl text-brand-white tabular-nums">$220</p>
+              <p className="font-sans text-[10px] tracking-[0.25em] uppercase text-brand-gray">
+                10ml + 10ml
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-3 pt-1">
               <button
                 onClick={addPromo}
-                className="w-full py-3 bg-brand-white text-brand-black font-sans text-xs tracking-widest uppercase hover:bg-brand-offwhite transition-colors duration-200"
+                className="px-9 py-4 bg-brand-offwhite text-brand-black font-sans text-[11px] tracking-[0.25em] uppercase font-medium hover:bg-brand-white transition-colors duration-300 active:scale-[0.98]"
               >
                 Agregar al carrito
               </button>
@@ -91,16 +106,16 @@ export default function OffersSection() {
                 href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Hola! Me interesa la promo de Sky Mandarin + Odyssey Mega (10ml c/u) en $220. ¿Tienen disponible?")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center py-2.5 border border-brand-gray/30 text-brand-gray font-sans text-xs tracking-widest uppercase hover:border-brand-white hover:text-brand-white transition-all duration-200"
+                className="px-9 py-4 border border-brand-gray/40 text-brand-chalk font-sans text-[11px] tracking-[0.25em] uppercase text-center hover:border-brand-chalk hover:text-brand-white transition-all duration-300"
               >
-                Consultar por WhatsApp
+                Consultar
               </a>
             </div>
-          </motion.div>
 
-          <p className="font-sans text-xs text-brand-gray/40 tracking-wider">
-            Las promociones cambian frecuentemente. Escríbenos para conocer las más recientes.
-          </p>
+            <p className="font-sans text-[11px] text-brand-gray/50 tracking-wider">
+              Las promociones cambian frecuentemente — escríbenos para conocer las más recientes.
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>
