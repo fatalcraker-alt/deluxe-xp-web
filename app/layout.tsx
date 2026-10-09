@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Fraunces } from "next/font/google";
 import Providers from "@/components/Providers";
 import "./globals.css";
@@ -26,7 +26,22 @@ export const metadata: Metadata = {
     description: "Decants y frascos completos. Encuentra tu fragancia.",
     locale: "es_MX",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Deluxe XP — Fragancias" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Deluxe XP — Fragancias",
+    description: "Decants y frascos completos. Encuentra tu fragancia.",
+    images: ["/og-image.png"],
+  },
+  // El ícono vive en app/icon.png y apple-icon.png (convención de Next); aquí lo del celular.
+  metadataBase: new URL("https://deluxe-xp-web.vercel.app"),
+  manifest: "/manifest.webmanifest",
+  appleWebApp: { capable: true, title: "Deluxe XP", statusBarStyle: "black-translucent" },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0A0A0A",
 };
 
 export default function RootLayout({
